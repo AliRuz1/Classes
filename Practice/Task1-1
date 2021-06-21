@@ -1,0 +1,29 @@
+public class Classes1 {
+    public static int a = 5;
+    public static int b = 2;
+    public static void main(String[] args) {
+        show(a,b);
+        System.out.println("new numbers: ");
+        change(a,b);
+        System.out.println("summary: " + summary(a,b));
+        System.out.println("max: " + maximum(a,b));
+    }
+
+     public static int summary(int a, int b) {
+         return a + b;
+     }
+     public static void show(int a, int b){
+         System.out.println("a: " + a + " b: " + b);
+     }
+     public static void change(int a, int b){
+        a = 3;
+        b = 12;
+         System.out.println("a: " + a + " b: " + b);
+     }
+     public static int maximum(int a, int b){
+        return Math.max(a,b);
+     }
+}
+
+
+
